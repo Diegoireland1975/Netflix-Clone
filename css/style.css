@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  --primary-color: #e50914;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: #000;
+  color: #999;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 7px 17px;
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 2px;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+}
+
+.btn-rounded {
+  border-radius: 5px;
+}
+
+/* Showcase */
+.logo {
+  height: 24px;
+  width: 100px;
+}
+.showcase {
+  height: 100vh;
+  width: 100%;
+  background: url(../img/background.jpg) no-repeat center center/cover;
+  background-color: rgb(48, 48, 48);
+  background-blend-mode: overlay;
+}
+.showcase-top {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.showcase-content {
+  color: #fff;
+  height: 100vh;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.card-title {
+  font-size: 1.75rem;
+}
+
+.showcase .card-subtitle {
+  font-size: 1.625rem;
+  margin: 1.5rem 0;
+}
+
+.showcase .form-title {
+  margin-bottom: 1rem;
+}
+
+.email-form input {
+  border: 0;
+  margin-bottom: 2rem;
+  width: 450px;
+}
+
+.email-form input:focus,
+.email-form button:focus {
+  outline: 0;
+}
+.email-form input,
+.email-form button {
+  /* padding: 1.2rem 2rem; */
+  padding: 0.8rem 1.5rem;
+  letter-spacing: 2px;
+  border-radius: 1px;
+  font-size: 1.2rem;
+}
+
+.email-form button {
+  display: inline-block;
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: bold;
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  width: 200px;
+}
+
+.email-form button::after {
+  content: "";
+  position: absolute;
+  background: url(../img/right-chevron.svg);
+  background-size: 1.5rem 1.5rem;
+  height: 24px;
+  width: 24px;
+  margin-left: 0.3rem;
+}
+@media (min-width: 768px) {
+  .logo {
+    height: 32px;
+    width: 108px;
+  }
+
+  .card-title {
+    font-size: 3.125rem;
+  }
+
+  .card-subtitle {
+    font-size: 1.625rem;
+  }
+  .email-form {
+    flex-direction: row;
+  }
+
+  .email-form input {
+    margin-bottom: 0;
+  }
+  .email-form input,
+  .email-form button {
+    padding: 1.2rem 1.5rem;
+  }
+  .email-form button {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1024) {
+  .logo {
+    height: 36px;
+    width: 134px;
+  }
+
+  .email-form input,
+  .email-form button {
+    font-size: 1.2rem;
+  }
+}
