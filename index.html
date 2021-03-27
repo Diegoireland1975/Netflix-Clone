@@ -5,9 +5,9 @@
   <meta name="description" content="This is a Netflix clone">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/31e8741b4e.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="netflix.svg">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Netflix Clone | Watch Tv Shows Online, Watch Movies Online</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
     <div class="container">
       <div class="showcase-top flex">
         <img class="logo" src="img/logo.png" alt="netflix logo">
-        <a href="#" class="btn btn-primary btn-rounded">Sign In</a>
+        <a href="#" class="btn btn-primary">Sign In</a>
       </div>
       <div class="showcase-content flex text-center">
         <h1 class="card-title">Unlimited films, TV programmes and more.</h1>
@@ -29,8 +29,138 @@
           </div>
         </form>
       </div>
-
     </div>
   </header>
+
+  <!-- Section tabs -->
+  <section class="tabs">
+    <div class="container ">
+      <div id="tab-1" class="tab-item tab-border flex">
+        <img class="icon" src="img/log-out.svg" alt="icon log out">
+        <p class="hide-sm">Cancel at any time</p>
+      </div>
+      <div id="tab-2" class="tab-item flex">
+        <img class="icon" src="img/responsive.svg" alt="icon responsive">
+        <p class="hide-sm">Watch anywhere</p>
+      </div>
+      <div id="tab-3" class="tab-item flex">
+        <img class="icon" src="img/price-tag.svg" alt="icon log out">
+        <p class="hide-sm">Pick your price</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tab-content py-3">
+    <div class="container">
+      <!-- tab content 1 -->
+      <!-- <div id="tab-1-content" class="tab-content-item show">
+        <div class="tab-1-content-inner grid text-center">
+          <div>
+            <p class="text-lg">If you decide Netflix isn't for you - no problem. No commitment. Cancel online anytime.
+            </p>
+            <a class="btn btn-primary btn-lg my-1" href="#">Watch free for 30 days</a>
+          </div>
+          <img src="img/tab-content-1.png" alt="cancel account">
+        </div>
+      </div> -->
+
+      <!-- tab content 2 -->
+      <div id="tab-2-content" class="tab-content-item">
+        <!-- tab content 2-content top -->
+        <!-- <div class="tab-2-content-top text-center grid py-2">
+          <p class="text-lg">Watch TV shows and movies anytime, anywhere — personalized for you.
+          </p>
+          <a class="btn btn-primary btn-lg my-1" href="#">Watch free for 30 days</a>
+        </div> -->
+        <!-- tab content 2-content bottom -->
+        <!-- <div class="tab-2-content-bottom grid">
+          <div class="tab-2-content-1">
+            <img src="img/tab-content-2-1.png" alt="cancel account">
+            <h3>Watch on your TV</h3>
+            <p class="text-dark">Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+          </div>
+          <div class="tab-2-content-2">
+            <img src="img/tab-content-2-2.png" alt="cancel account">
+            <h3>Watch instantly or download for later</h3>
+            <p class="text-dark">Available on phone and tablet, wherever you go.</p>
+          </div>
+          <div class="tab-2-content-3">
+            <img src="img/tab-content-2-3.png" alt="cancel account">
+            <h3>Use any computer</h3>
+            <p class="text-dark">Watch right on Netflix.com.</p>
+          </div>
+        </div> -->
+
+        <!-- tab content 3 -->
+        <div id="tab-3-content" class="tab-content-item">
+          <!-- tab content 3-content top -->
+          <div class="tab-3-top text-center flex py-2">
+            <p class="text-lg">Choose one plan and watch everything on Netflix.
+            </p>
+            <a class="btn btn-primary btn-lg my-1" href="#">Watch free for 30 days</a>
+          </div>
+          <!-- tab content 3-content bottom -->
+          <table class="tab-3-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Basic</th>
+                <th>Standard</th>
+                <th>Premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monthly price after free month ends on 6/19/19</td>
+                <td>$8.99</td>
+                <td>$12.99</td>
+                <td>$15.99</td>
+              </tr>
+              <tr>
+                <td>HD Available</td>
+                <td><img src="img/cancel.svg" alt="cancel icon"></td>
+                <td><img src="img/check.svg" alt="check icon"></td>
+                <td><img src="img/check.svg" alt="check icon"></td>
+              </tr>
+              <tr>
+                <td>Ultra HD Available</td>
+                <td><img src="img/cancel.svg" alt="cancel icon"></td>
+                <td><img src="img/cancel.svg" alt="cancel icon"></td>
+                <td><img src="img/check.svg" alt="check icon"></td>
+              </tr>
+              <tr>
+                <td>Screens you can watch on at the same time</td>
+                <td><img src="img/number1.svg" alt="number 1"></td>
+                <td><img src="img/number2.svg" alt="number 2"></td>
+                <td><img src="img/number4.svg" alt="number 4"></td>
+              </tr>
+              <tr>
+                <td>Watch on your laptop, TV, phone and tablet</td>
+                <td><img src="img/check.svg" alt="check icon"></td>
+                <td><img src="img/check.svg" alt="check icon"></td>
+                <td><img src="img/check.svg" alt="check icon"></td>
+              </tr>
+              <tr>
+                <td>Unlimited movies and TV shows</td>
+                <td><img src="img/check.svg" alt="check icon"></td>
+                <td><img src="img/check.svg" alt="check icon"></td>
+                <td><img src="img/check.svg" alt="check icon"></td>
+              </tr>
+              <tr>
+                <td>Cancel anytime</td>
+                <td><img src="img/check.svg" alt="check icon"></td>
+                <td><img src="img/check.svg" alt="check icon"></td>
+                <td><img src="img/check.svg" alt="check icon"></td>
+              </tr>
+              <tr>
+                <td>First month free</td>
+                <td><img src="img/check.svg" alt="check icon"></td>
+                <td><img src="img/check.svg" alt="check icon"></td>
+                <td><img src="img/check.svg" alt="check icon"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+  </section>
 </body>
 </html>
