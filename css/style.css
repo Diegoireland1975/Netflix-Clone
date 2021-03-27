@@ -175,10 +175,12 @@ img {
   margin-bottom: 1rem;
 }
 
+/* Table */
 table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
+  margin-top: 1rem;
 }
 
 thead th {
@@ -204,7 +206,7 @@ tbody tr td:first-child {
 }
 
 /* tbody tr td:nth-of-type(odd) {
-  background: linear-gradient(45deg, rgb(131, 2, 2), var(--primary-color));
+  background: linear-gradient(45deg, #830202, var(--primary-color));
 } */
 /* tbody tr td:nth-of-type(even) {
   background: linear-gradient(45deg, #222, #444);
@@ -316,7 +318,8 @@ tbody tr:nth-child(odd) {
     text-align: left;
   }
 
-  .tab-content img {
+  .tab-1-content img,
+  .tab-2-content img {
     width: 100%;
     margin: 0 auto;
   }
