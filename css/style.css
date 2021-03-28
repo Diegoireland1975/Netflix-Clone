@@ -111,6 +111,7 @@ img {
 .tabs {
   border-bottom: 3px solid #3d3d3d;
   background: var(--dark-color);
+  padding-top: 2rem;
 }
 
 .tabs .container {
@@ -216,6 +217,17 @@ tbody tr:nth-child(odd) {
   background: linear-gradient(45deg, #333, #222);
 }
 
+/* Footer */
+.main-footer {
+  border-top: 6px solid #3d3d3d;
+}
+
+.main-footer p {
+  text-align: left;
+}
+.main-footer .container {
+  grid-template-columns: repeat(2, 1fr);
+}
 /* ############# */
 /* MEDIA QUERIES */
 /* ############## */
@@ -251,11 +263,6 @@ tbody tr:nth-child(odd) {
     display: inline-block;
   }
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .tab-1-content-inner > div {
     width: 450px;
     text-align: left;
@@ -275,7 +282,30 @@ tbody tr:nth-child(odd) {
   }
 
   .tab-2-content-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: flex-start;
+  }
+
+  .main-footer .container {
+    max-width: 1000px;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .main-footer li {
+    margin-bottom: 0.6rem;
+    white-space: nowrap;
+    font-size: 0.8rem;
+  }
+
+  .main-footer a {
+    color: #999;
+  }
+
+  .main-footer a:hover {
+    text-decoration: underline;
   }
 }
 
