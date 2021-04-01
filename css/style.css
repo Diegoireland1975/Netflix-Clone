@@ -243,11 +243,14 @@ img {
   color: #fff;
 }
 .slideshow .card-title {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   line-height: 1.1;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 .slideshow .card-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
+  text-align: center;
 }
 
 .tv {
@@ -400,10 +403,12 @@ img {
   }
   .slideshow .card-title {
     font-size: 3.125rem;
+    text-align: left;
   }
 
   .slideshow .card-subtitle {
     font-size: 1.625rem;
+    text-align: left;
   }
   /* Footer */
   .main-footer .container {
