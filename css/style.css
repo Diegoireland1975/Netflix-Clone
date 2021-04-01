@@ -238,7 +238,7 @@ img {
 
 /* Slideshow */
 .slideshow {
-  border-top: 4px solid #3d3d3d;
+  border-top: 6px solid #3d3d3d;
   padding-bottom: 2rem;
   color: #fff;
 }
@@ -260,6 +260,21 @@ img {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: -1;
+}
+
+.apple-tv {
+  position: relative;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.apple-tv .video {
+  position: absolute;
+  top: 10%;
+  left: 19%;
+  width: 61%;
+
   z-index: -1;
 }
 /* Footer */
