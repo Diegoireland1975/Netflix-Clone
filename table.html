@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .table{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 400px;
+      margin: 0 auto;
+    }
+    .table .row img {
+      width: 1.5rem
+    }
+
+    .table .row:first-of-type li {
+      text-align: center;
+      background:linear-gradient(to left, rgb(131, 2, 2), #e50914);
+      color:#fff;
+      text-transform: uppercase;
+    }
+    .table .row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex: 2;
+
+    }
+    .table li .red {
+      background: linear-gradient(to left, rgb(131, 2, 2), red);
+    }
+    .table .row li {
+      background: linear-gradient(45deg, #333, #222);
+      flex: 1;
+      padding: 10px;
+      border-bottom: 1px solid gray;
+      text-align: center;
+    }
+
+    .table .legend{
+      width: 300px;
+      align-items: flex-start;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    @media(min-width:768px) {
+      .table{
+        align-items: center;
+      }
+
+      .table .row {
+        color:#fff;
+      }
+     .table .row .legend {
+       width: 700px;
+       text-align: left;
+     }
+    }
+
+    @media(min-width:1024px){
+      .table .row .legend {
+       width: 900px
+     }
+    }
+  </style>
+</head>
+<body>
+  <div class="table">
+    <ul class="row">
+      <li class="legend"></li>
+      <li class="red">Basic</li>
+      <li class="red">Standard</li>
+      <li class="red">Premium</li>
+    </ul>
+    <ul class="row">
+      <li class="legend">Monthly price after free month ends on 6/19/19</li>
+      <li>$8.99</li>
+      <li>$12.99</li>
+      <li>$15.99</li>
+    </ul>
+    <ul class="row">
+      <li class="legend">HD Available</li>
+      <li><img src="img/cancel.svg" alt="cancel icon"></li>
+      <li><img src="img/check.svg" alt="check icon"></li>
+      <li><img src="img/check.svg" alt="check icon"></li>
+    </ul>
+    <ul class="row">
+      <li class="legend">Ultra HD Available</li>
+      <li><img src="img/cancel.svg" alt="cancel icon"></li>
+      <li><img src="img/cancel.svg" alt="cancel icon"></li>
+      <li><img src="img/check.svg" alt="check icon"></li>
+    </ul>
+    <ul class="row">
+      <li class="legend">Screens you can watch on at the same time</li>
+      <li><img src="img/number1.svg" alt="icon number 1"></li>
+      <li><img src="img/number2.svg" alt="icon number 2"></li>
+      <li><img src="img/number4.svg" alt="icon number 4"></li>
+    </ul>
+    <ul class="row">
+      <li class="legend">Watch on your laptop, TV, phone and tablet</li>
+      <li><img src="img/check.svg" alt="check icon"></li>
+      <li><img src="img/check.svg" alt="check icon"></li>
+      <li><img src="img/check.svg" alt="check icon"></li>
+    </ul>
+    <ul class="row">
+      <li class="legend">Unlimited movies and TV shows</li>
+      <li><img src="img/check.svg" alt="check icon"></li>
+      <li><img src="img/check.svg" alt="check icon"></li>
+      <li><img src="img/check.svg" alt="check icon"></li>
+    </ul>
+    <ul class="row">
+      <li class="legend">Cancel anytime</li>
+      <li><img src="img/check.svg" alt="check icon"></li>
+      <li><img src="img/check.svg" alt="check icon"></li>
+      <li><img src="img/check.svg" alt="check icon"></li>
+    </ul>
+    <ul class="row">
+      <li class="legend">First month free</li>
+      <li><img src="img/check.svg" alt="check icon"></li>
+      <li><img src="img/check.svg" alt="check icon"></li>
+      <li><img src="img/check.svg" alt="check icon"></li>
+    </ul>
+
+  </div>
+</body>
+</html>
