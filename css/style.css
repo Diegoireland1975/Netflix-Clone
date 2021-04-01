@@ -236,6 +236,32 @@ img {
   /* background: linear-gradient(to left, rgb(131, 2, 2), var(--primary-color)); */
 }
 
+/* Slideshow */
+.slideshow {
+  border-top: 4px solid #3d3d3d;
+  padding-bottom: 2rem;
+  color: #fff;
+}
+.slideshow .card-title {
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+.slideshow .card-subtitle {
+  font-size: 1.25rem;
+}
+
+.tv {
+  position: relative;
+  max-width: 550px;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
 /* Footer */
 .main-footer {
   border-top: 6px solid #3d3d3d;
@@ -253,6 +279,7 @@ img {
   color: #999;
   font-size: 0.8rem;
 }
+
 /* ############# */
 /* MEDIA QUERIES */
 /* ############## */
@@ -350,7 +377,20 @@ img {
   .table .row:first-of-type li {
     font-size: 1rem;
   }
+  /* Card */
 
+  .slideshow .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .slideshow .card-title {
+    font-size: 3.125rem;
+  }
+
+  .slideshow .card-subtitle {
+    font-size: 1.625rem;
+  }
+  /* Footer */
   .main-footer .container {
     max-width: 1000px;
     grid-template-columns: repeat(4, 1fr);
