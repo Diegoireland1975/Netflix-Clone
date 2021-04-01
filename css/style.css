@@ -232,7 +232,7 @@ img {
 }
 .table .row .legend {
   width: 260px;
-  align-items: flex-start;
+  text-align: left;
   /* background: linear-gradient(to left, rgb(131, 2, 2), var(--primary-color)); */
 }
 
@@ -330,6 +330,7 @@ img {
   .table {
     align-items: center;
     max-width: 1200px;
+    padding: 0 1rem;
   }
 
   .table .row {
@@ -398,8 +399,12 @@ img {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .table {
+    max-width: 1400px;
+  }
   .table .row .legend {
-    width: 700px;
+    min-width: 300px;
+    white-space: nowrap;
   }
 }
 
