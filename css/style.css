@@ -60,13 +60,13 @@ img {
 .showcase .card-subtitle {
   font-size: 1.625rem;
   margin: 1.5rem 0;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .showcase .form-title,
 .questions .form-title {
   margin-bottom: 1rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .email-form input {
