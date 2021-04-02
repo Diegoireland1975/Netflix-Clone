@@ -301,13 +301,14 @@ img {
   overflow: hidden;
   transition: all 0.4s ease;
 }
-.collapsible-content.show {
+
+.show + .collapsible-content {
   max-height: 100vh;
   opacity: 1;
 }
 .collapsible .collapsible-content p {
   padding: 1rem 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .questions .icon {
   width: 1rem;
@@ -316,7 +317,7 @@ img {
   cursor: pointer;
 }
 
-.questions .icon.rotate {
+.show > .icon {
   transform: rotate(90deg);
 }
 
@@ -462,6 +463,11 @@ img {
   .collapsible-header h2 {
     font-size: 1.8rem;
     font-weight: 400;
+  }
+
+  .collapsible .collapsible-content p {
+    padding: 1rem 0;
+    font-size: 1.5rem;
   }
   /* Footer */
   .main-footer .container {

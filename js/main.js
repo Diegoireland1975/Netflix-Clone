@@ -23,12 +23,12 @@ function removeShow() {
 tabItems.forEach((item) => item.addEventListener("click", selectItem));
 
 // Collapsible
-const collapsibleHeader = document.querySelectorAll(".collapsible-header");
-const collapsibleContent = document.querySelectorAll(".collapsible-content");
+const collapsibleHeaders = document.querySelectorAll(".collapsible-header");
+const collapsibleContents = document.querySelectorAll(".collapsible-content");
 const icon = document.querySelectorAll(".icon");
 
-collapsibleHeader.forEach((item) => {
+collapsibleHeaders.forEach((collapsibleHeader) => {
   collapsibleHeader.addEventListener("click", () => {
-    collapsibleContent.classList.toggle("show");
+    collapsibleHeader.classList.toggle("show");
   });
 });
