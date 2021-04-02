@@ -271,7 +271,7 @@ img {
   z-index: -1;
 }
 
-/* Questions */
+/* Questions Sections */
 
 .questions {
   color: #fff;
@@ -309,7 +309,7 @@ img {
   font-size: 1rem;
 }
 .questions .icon {
-  width: 1.5rem;
+  width: 1rem;
   transform: rotate(-45deg);
   transition: transform 0.4s ease;
   cursor: pointer;
@@ -455,6 +455,9 @@ img {
     padding: 1.5rem;
   }
 
+  .questions .icon {
+    width: 1.5rem;
+  }
   .collapsible-header h2 {
     font-size: 1.8rem;
     font-weight: 400;
