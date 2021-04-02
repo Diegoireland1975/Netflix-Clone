@@ -21,3 +21,23 @@ function removeShow() {
 }
 // Listen for tab click
 tabItems.forEach((item) => item.addEventListener("click", selectItem));
+
+// Collapsible
+const collapsibleHeader = document.querySelectorAll(".collapsible-header");
+const collapsibleContent = document.querySelectorAll(".collapsible-content");
+const icon = document.querySelectorAll(".icon");
+
+collapsibleHeader.forEach((item) => {
+  item.addEventListener("click", () => {
+    collapsibleContent.classList.toggle("show");
+    icon.classList.toggle("rotate");
+  });
+});
+
+// let clickMe = document.querySelectorAll(".collapsible-header");
+// let collapsibleContent = document.querySelectorAll(".collapsibleContent");
+// clickMe.forEach((item) => {
+//   item.addEventListener("click", function () {
+//     this.classList.toggle("show");
+//   });
+// });

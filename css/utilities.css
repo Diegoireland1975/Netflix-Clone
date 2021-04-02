@@ -71,6 +71,16 @@
   text-transform: uppercase;
 }
 
+.card-title {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  text-align: center;
+  /* margin-top: 2rem; */
+}
+.card-subtitle {
+  font-size: 1.1rem;
+  text-align: center;
+}
 /* Margin and Padding  */
 .my-1 {
   margin: 1rem 0;

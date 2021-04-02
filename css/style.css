@@ -53,7 +53,7 @@ img {
   margin: 0 auto;
 }
 
-.card-title {
+.showcase .card-title {
   font-size: 1.75rem;
 }
 
@@ -63,7 +63,8 @@ img {
   font-weight: 300;
 }
 
-.showcase .form-title {
+.showcase .form-title,
+.questions .form-title {
   margin-bottom: 1rem;
   font-weight: 300;
 }
@@ -239,18 +240,7 @@ img {
 /* Slideshow */
 .slideshow {
   border-top: 6px solid #3d3d3d;
-  padding-bottom: 2rem;
   color: #fff;
-}
-.slideshow .card-title {
-  font-size: 1.5rem;
-  line-height: 1.1;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-.slideshow .card-subtitle {
-  font-size: 1.1rem;
-  text-align: center;
 }
 
 .tv {
@@ -280,6 +270,55 @@ img {
 
   z-index: -1;
 }
+
+/* Questions */
+
+.questions {
+  color: #fff;
+  border-top: 6px solid #3d3d3d;
+}
+.questions .collapsible {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background: #303030;
+  padding: 1rem;
+}
+
+.collapsible .collapsible-header {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.collapsible-header h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.collapsible-content {
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.collapsible-content.show {
+  max-height: 100vh;
+  opacity: 1;
+}
+.collapsible .collapsible-content p {
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+.questions .icon {
+  width: 1.5rem;
+  transform: rotate(-45deg);
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.questions .icon.rotate {
+  transform: rotate(90deg);
+}
+
 /* Footer */
 .main-footer {
   border-top: 6px solid #3d3d3d;
@@ -395,7 +434,7 @@ img {
   .table .row:first-of-type li {
     font-size: 1rem;
   }
-  /* Card */
+  /* Cards */
 
   .slideshow .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -409,6 +448,16 @@ img {
   .slideshow .card-subtitle {
     font-size: 1.625rem;
     text-align: left;
+  }
+
+  /* Collapsible */
+  .questions .collapsible {
+    padding: 1.5rem;
+  }
+
+  .collapsible-header h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
   }
   /* Footer */
   .main-footer .container {
