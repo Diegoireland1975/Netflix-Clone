@@ -28,16 +28,7 @@ const collapsibleContent = document.querySelectorAll(".collapsible-content");
 const icon = document.querySelectorAll(".icon");
 
 collapsibleHeader.forEach((item) => {
-  item.addEventListener("click", () => {
+  collapsibleHeader.addEventListener("click", () => {
     collapsibleContent.classList.toggle("show");
-    icon.classList.toggle("rotate");
   });
 });
-
-// let clickMe = document.querySelectorAll(".collapsible-header");
-// let collapsibleContent = document.querySelectorAll(".collapsibleContent");
-// clickMe.forEach((item) => {
-//   item.addEventListener("click", function () {
-//     this.classList.toggle("show");
-//   });
-// });
