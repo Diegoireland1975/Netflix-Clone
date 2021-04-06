@@ -570,7 +570,7 @@ img {
 
   .tabs .container,
   .tab-content .container {
-    max-width: 70%;
+    max-width: 90%;
     margin: 0 auto;
     overflow: hidden;
   }
