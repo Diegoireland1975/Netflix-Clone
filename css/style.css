@@ -432,6 +432,10 @@ img {
     display: inline-block;
   }
 
+  .tabs .container {
+    justify-content: space-around;
+  }
+
   .tabs .container,
   .tab-content .container {
     max-width: 100%;
